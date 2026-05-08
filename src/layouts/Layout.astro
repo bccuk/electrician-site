@@ -32,7 +32,7 @@ const canonicalUrl = Astro.site
     <link rel="manifest" href={`${import.meta.env.BASE_URL}/manifest.webmanifest`.replace(/\/+/g, '/')} />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="apple-mobile-web-app-title" content="The Cut Co." />
+    <meta name="apple-mobile-web-app-title" content="Volt &amp; Co." />
 
     <title>{pageTitle}</title>
     <meta name="description" content={pageDescription} />
@@ -61,7 +61,7 @@ const canonicalUrl = Astro.site
       type="application/ld+json"
       set:html={JSON.stringify({
         '@context': 'https://schema.org',
-        '@type': 'BarberShop',
+        '@type': 'Electrician',
         name: site.name,
         description: site.description,
         url: canonicalUrl,

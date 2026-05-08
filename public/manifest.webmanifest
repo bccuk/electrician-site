@@ -1,7 +1,7 @@
 {
-  "name": "The Cut Co. — London",
-  "short_name": "The Cut Co.",
-  "description": "Sample barbershop website by Bytecode Studio. Modern fades, classic cuts, and hot-towel shaves on the High Street. Walk-ins welcome — open 7 days.",
+  "name": "Volt & Co. Electrical — Dartford",
+  "short_name": "Volt & Co.",
+  "description": "NICEIC-approved domestic and commercial electricians serving Dartford, Bexley, Sidcup and across Kent. Same-day callouts, 24-hour emergency service.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
@@ -9,7 +9,7 @@
   "background_color": "#faf7f2",
   "theme_color": "#141414",
   "lang": "en-GB",
-  "categories": ["business", "lifestyle"],
+  "categories": ["business", "utilities"],
   "icons": [
     {
       "src": "/pwa-192.png",
