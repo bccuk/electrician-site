@@ -1,0 +1,16 @@
+---
+import { site } from '../data/site';
+
+if (!site.status.enabled) return;
+---
+
+<div
+  class="bg-ink text-cream/90 text-xs sm:text-sm border-b border-cream/10"
+  role="status"
+  aria-label="Current booking status"
+>
+  <div class="container-page py-2.5 flex items-center justify-center gap-2 text-center">
+    <span aria-hidden="true">{site.status.emoji}</span>
+    <span class="font-medium">{site.status.text}</span>
+  </div>
+</div>

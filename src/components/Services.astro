@@ -1,0 +1,62 @@
+---
+import { site } from '../data/site';
+---
+
+<section id="services" class="section-pad bg-cream">
+  <div class="container-page">
+    <div class="grid md:grid-cols-12 gap-10 md:gap-16 items-end">
+      <div class="md:col-span-5">
+        <p class="eyebrow">What we do</p>
+        <h2 class="mt-4 font-display text-4xl md:text-5xl lg:text-6xl leading-[1.05] text-ink">
+          Services &<br />honest prices.
+        </h2>
+      </div>
+      <div class="md:col-span-7">
+        <p class="text-lg text-muted max-w-xl leading-relaxed">
+          Every service starts with a real consultation. No upsells, no
+          subscriptions — just a proper cut at a fair price. Walk-ins welcome,
+          bookings recommended on Saturdays.
+        </p>
+      </div>
+    </div>
+
+    <ul class="mt-14 md:mt-20 grid sm:grid-cols-2 gap-x-12 gap-y-1 divide-y divide-ink/10 sm:divide-y-0">
+      {
+        site.services.map((service) => (
+          <li
+            class:list={[
+              'group relative flex items-baseline gap-4 py-6 border-b border-ink/10 transition-colors',
+              service.featured && 'sm:bg-cream-dark sm:px-6 sm:-mx-6 sm:rounded-lg sm:border-transparent sm:border-l-4 sm:border-l-brass'
+            ]}
+          >
+            <div class="flex-1">
+              <div class="flex items-baseline gap-3 flex-wrap">
+                <h3 class="font-display text-xl md:text-2xl text-ink">
+                  {service.name}
+                </h3>
+                {service.featured && (
+                  <span class="text-[0.65rem] uppercase tracking-[0.18em] font-semibold text-brass">
+                    Most popular
+                  </span>
+                )}
+              </div>
+              <p class="mt-1 text-sm text-muted leading-relaxed">
+                {service.description} <span class="text-muted/60">· {service.duration}</span>
+              </p>
+            </div>
+            <div class="flex items-baseline shrink-0">
+              <span class="text-xs text-muted mr-1">£</span>
+              <span class="font-display text-2xl md:text-3xl text-ink tabular-nums">
+                {service.price}
+              </span>
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+
+    <p class="mt-10 text-sm text-muted">
+      Prices include VAT. Cash and card welcome. Gift cards available in shop.
+    </p>
+  </div>
+</section>

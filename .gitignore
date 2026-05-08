@@ -1,0 +1,48 @@
+# --- Secrets & local config ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials.json
+service-account*.json
+
+# --- Editor / OS ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Node ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+
+# --- Build output ---
+dist/
+build/
+out/
+.next/
+.nuxt/
+.turbo/
+.cache/
+coverage/
+
+# --- Astro ---
+.astro/
+
+# --- Env (already in universal but reinforced) ---
+.env*.local
